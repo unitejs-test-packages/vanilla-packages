@@ -9,8 +9,7 @@ addons:
 node_js:
   - 10
 before_install:
-  - npm install -g gulp webdriver-manager
-  - webdriver-manager update --chrome=true
+  - npm install -g gulp
   - git clone --branch=$TRAVIS_BRANCH https://github.com/unitejs/framework.git unitejs/unitejs-framework
   - cd unitejs/unitejs-framework
   - npm link
